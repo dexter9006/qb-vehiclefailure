@@ -62,7 +62,7 @@ cfg = {
 
 	torqueMultiplierEnabled = true,				-- Decrease engine torque as engine gets more and more damaged
 
-	limpMode = false,							-- If true, the engine never fails completely, so you will always be able to get to a mechanic unless you flip your vehicle and preventVehicleFlip is set to true
+	limpMode = true,							-- If true, the engine never fails completely, so you will always be able to get to a mechanic unless you flip your vehicle and preventVehicleFlip is set to true
 	limpModeMultiplier = 0.15,					-- The torque multiplier to use when vehicle is limping. Sane values are 0.05 to 0.25
 
 	preventVehicleFlip = true,					-- If true, you can't turn over an upside down vehicle
@@ -75,7 +75,7 @@ cfg = {
 
 	compatibilityMode = false,					-- prevents other scripts from modifying the fuel tank health to avoid random engine failure with BVA 2.01 (Downside is it disabled explosion prevention)
 
-	randomTireBurstInterval = 0,				-- Number of minutes (statistically, not precisely) to drive above 22 mph before you get a tire puncture. 0=feature is disabled
+	randomTireBurstInterval = 900,				-- Number of minutes (statistically, not precisely) to drive above 22 mph before you get a tire puncture. 0=feature is disabled
 
 
 	-- Class Damagefactor Multiplier
@@ -186,6 +186,7 @@ cfg = {
 
 repairCfg = {
 	mechanics = {
+		--[[
 		{name="Garage", id=446, r=25.0, x=-337.0,  y=-135.0,  z=39.0},	-- LSC Burton
 		{name="Garage", id=446, r=25.0, x=-1155.0, y=-2007.0, z=13.0},	-- LSC by airport
 		{name="Garage", id=446, r=25.0, x=734.0,   y=-1085.0, z=22.0},	-- LSC La Mesa
@@ -208,6 +209,7 @@ repairCfg = {
 		--{name="Garage", id=446, r=25.0, x=-211.0,  y=-1325.0, z=31.0},	-- Bennys
 		{name="Garage", id=446, r=25.0, x=903.0,   y=3563.0,  z=34.0},	-- Auto Repair, Grand Senora Desert
 		{name="Garage", id=446, r=25.0, x=437.0,   y=3568.0,  z=38.0}		-- Auto Shop, Grand Senora Desert
+		--]]
 	},
 
     fixMessageCount = 7,
